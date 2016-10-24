@@ -16,34 +16,39 @@
         width: 100px;
       }
 
+      div.image {
+        background: url(./background2.jpg) center bottom/cover no-repeat;
+        border-radius: 8px;
+        min-height: 600px;
+      }
+
       h2.serif {
         font-family: 'Niconne', cursive;
         font-style: italic;
+        font-weight: 800;
         font-size: 48px;
-        color: #FFF;
-        min-height: 120px;
-        line-height: 120px;
+        padding-top: 510px;
         letter-spacing: 3;
-        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
-        border-radius: 8px;
-        background: url(./dinner-tips.jpg);
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+        color: #FFF;
       }
     </style>
   </head>
-  <body style="background: url(./background2.jpg) right center/contain no-repeat fixed;">
-    <div class="container">
-      <div class="narrow">
-        <h2 class="text-center serif">Henluen &amp; Jonathan</h2>
+  <body>
+    <div class="container narrow">
+      <div class="jumbotron">
+        <div class="image">
+          <h2 class="text-center serif">Henluen &amp; Jonathan</h2>
+        </div>
       </div>
-      <div class="page-header narrow">
+      <div class="page-header">
         <h3 class="text-muted">VENUE</h3>
       </div>
       <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJIbkjxwcg3YAR_l0Qj_Ex0UU&key=AIzaSyDgCmpCwBZod9TSiyjUl92YjqWjNtm06Nk" allowfullscreen></iframe>
       <h4 class="text-info">Complimentary valet parking is provided (including gratuity).</h4>
-      <div class="page-header narrow">
+      <div class="page-header">
         <h3 class="text-muted">SCHEDULE</h3>
       </div>
-      <div class="narrow">
       <table class="table table-bordered table-striped">
         <tr>
           <th scope="row">05:00 PM</th>
@@ -58,17 +63,36 @@
           <td>Afterparty</td>
         </tr>
       </table>
-      </div>
-      <h4 class="text-info">Cocktail or formal attire.</h4>
-      <div class="page-header narrow">
+      <h4 class="text-info">Cocktail or formal attire requested.</h4>
+      <div class="page-header">
         <h3 class="text-muted">GIFTS</h3>
       </div>
-      <p>
-        Your presence is gift enough, but if you are inclined to give, we ask that you donate to a worthy cause.
-      </p>
-      <p>
-        Below are some suggested charities.
-      </p>
+      <h4>
+        Your presence is gift enough, but if you are inclined to give, we ask
+        that you donate to a worthy cause of your choosing. Two causes near and
+        dear to our hearts are our alma maters.
+      </h4>
+      <p>&nbsp;</p>
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="berkeley.png" width="250" alt="Berkeley">
+            <div class="caption">
+              <h3 class="text-center">Berkeley</h3>
+              <p><a href="https://give.berkeley.edu/" class="btn btn-primary btn-block" role="button">Donate Now</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="caltech.png" width="250" alt="Caltech">
+            <div class="caption">
+              <h3 class="text-center">Caltech</h3>
+              <p><a href="http://breakthrough.caltech.edu/make-an-outright-gift/" class="btn btn-primary btn-block" role="button">Donate Now</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
